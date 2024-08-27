@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ecommerce site web</title>
+
+  <!--- favicon-->
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
+  <!--- custom css link-->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+
+  <!--- google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+  rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!---MODAL-->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!--- NOTIFICATION TOAST-->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./assets/images/product-5.jpg" alt="Boucles d'oreilles en or rose" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Quelqu'un vient d'acheter
+      </p>
+
+      <p class="toast-title">
+        Un t-shirt
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">Il y a 2 minutes</time>
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--- HEADER-->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="./assets/images/popup.jpg" alt="Anon's logo" width="120" height="36">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+    <nav class="mobile-navigation-menu has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Accueil</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">
+              Hommes
+            </p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Chemise</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Shorts & Jeans</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Blog</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Offres spéciales</a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+        <ul class="menu-social-container">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+
+
+  <!--- MAIN-->
+
+  <main>
+
+    <!--- BANNER-->
+
+    <div class="banner">
+
+      <div class="container">
+
+        <div class="slider-container has-scrollbar">
+
+          <div class="slider-item">
+
+            <img src="./assets/images/banner.png" alt="vente de la dernière mode pour femmes" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">
+                Article tendance
+              </p>
+
+
+
+              <p class="banner-text">
+                à partir de 8000 fcfa
+              </p>
+
+              <a href="#" class="banner-btn">Achetez maintenant</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/banner-2.jpg" alt="lunettes de soleil modernes" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">
+                Accessoires tendance
+              </p>
+
+              <h2 class="banner-title">Lunettes de soleil modernes</h2>
+
+              <p class="banner-text">
+                à partir de &dollar; <b>15</b>.00
+              </p>
+
+              <a href="#" class="banner-btn">Achetez maintenant</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/product-8.jpg" alt="nouvelle vente d'été à la mode" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">
+                Offre promotionnelle
+              </p>
+
+              <h2 class="banner-title">Nouvelle vente d'été à la mode</h2>
+
+              <p class="banner-text">
+                à partir de &dollar; <b>29</b>.99
+              </p>
+
+              <a href="#" class="banner-btn">Achetez maintenant</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!--- CATÉGORIE-->
+
+    <div class="category">
+
+      <div class="container">
+
+        <div class="category-item-container has-scrollbar">
+
+
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/coat.svg" alt="vêtements d'hiver" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Vêtements d'hiver</h3>
+
+                <p class="category-item-amount">
+                  (58)
+                </p>
+              </div>
+
+              <a href="#" class="category-btn">Voir tout</a>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/shorts.svg" alt="shorts & jeans" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Shorts & jeans</h3>
+
+                <p class="category-item-amount">
+                  (84)
+                </p>
+              </div>
+
+              <a href="#" class="category-btn">Voir tout</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/tee.svg" alt="t-shirts" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">T-shirts</h3>
+
+                <p class="category-item-amount">
+                  (35)
+                </p>
+              </div>
+
+              <a href="#" class="category-btn">Voir tout</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/jacket.svg" alt="veste" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Veste</h3>
+
+                <p class="category-item-amount">
+                  (16)
+                </p>
+              </div>
+
+              <a href="#" class="category-btn">Voir tout</a>
+
+            </div>
+
+          </div>
+
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/hat.svg" alt="chapeau & casquettes" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Chapeau & casquettes</h3>
+
+                <p class="category-item-amount">
+                  (39)
+                </p>
+              </div>
+
+              <a href="#" class="category-btn">Voir tout</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--- PRODUCT-->
+
+    <div class="product-container">
+
+      <div class="container">
+        <div class="product-box">
+
+          <!--- PRODUIT MINIMAL -->
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h2 class="title">Nouveautés</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/product-1.jpg" alt="T-shirt à manches longues et coupe décontractée" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">T-shirt à manches court et coupe décontractée</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Vêtements</a>
+
+                      <div class="price-box">
+                        <p class="price">
+                          13000 fcfa
+                        </p>
+                        <del>17000 fcfa</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/product-5.jpg" alt="Chemise en coton teint pur" class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Bob & T-Shirt Double G. </h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Mode homme</a>
+
+                      <div class="price-box">
+                        <p class="price">
+                          🏷️21.000Frc(Prix d’ensemble). 🏷️8.000Frc(Prix du Bob) 🏷️13.000Frc(Prix du T-Shirt)
+                        </p>
+                        <del>25000 fcfa</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/jacket-5.jpg" alt="Veste à fermeture éclair complète en polaire pour hommes" class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Veste en polaire à fermeture éclair complète pour hommes</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Vêtements d'hiver</a>
+
+                      <div class="price-box">
+                        <p class="price">
+                          61,00 $
+                        </p>
+                        <del>11,00 $</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/jacket-1.jpg" alt="Vestes en cuir d'hiver pour hommes" class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Vestes en cuir d'hiver pour hommes</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Vêtements d'hiver</a>
+
+                      <div class="price-box">
+                        <p class="price">
+                          32,00 $
+                        </p>
+                        <del>20,00 $</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/jacket-3.jpg" alt="Vestes en cuir d'hiver pour hommes" class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Vestes en cuir d'hiver pour hommes</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Vestes</a>
+
+                      <div class="price-box">
+                        <p class="price">
+                          50,00 $
+                        </p>
+                        <del>25,00 $</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/shorts-1.jpg" alt="Shorts en éponge française Better Basics" class="showcase-img" width="70">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Shorts en éponge française Better Basics</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Shorts</a>
+
+                      <div class="price-box">
+                        <p class="price">
+                          20,00 $
+                        </p>
+                        <del>10,00 $</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!--- PRODUCT FEATURED-->
+
+        <div class="product-featured">
+
+          <h2 class="title">Offre du jour</h2>
+
+          <div class="showcase-wrapper has-scrollbar">
+
+            <div class="showcase-container">
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/hero-2.png" alt="Packs de shampooing, après-shampooing et nettoyant pour le visage" class="showcase-img">
+                </div>
+
+                <div class="showcase-content">
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <a href="#">
+                    <h3 class="showcase-title">contact nous sur whatsapp </h3>
+                  </a>
+
+                  <p class="showcase-desc">
+                    Découvrez notre collection de vêtements qui allie élégance et confort. Chaque pièce est conçue avec des matériaux de haute qualité, respectant à la fois votre style et votre bien-être. Adoptez un look moderne et sophistiqué, tout en vous sentant à l'aise du matin jusqu'au soir. Mettez en valeur votre personnalité avec des tenues qui vous ressemblent, et laissez-vous séduire par des coupes qui subliment votre silhouette. Avec notre marque, chaque jour est une occasion de briller avec assurance.
+                  </p>
+
+                  <div class="price-box">
+                    <p class="price">
+                      18000fcfa
+                    </p>
+
+                    <del>20000fcfa</del>
+                  </div>
+
+                  <button class="add-cart-btn">ajouter au panier</button>
+
+                  <div class="showcase-status">
+                    <div class="wrapper">
+                      <p>
+                        déjà vendu : <b>20</b>
+                      </p>
+
+                      <p>
+                        disponible : <b>40</b>
+                      </p>
+                    </div>
+
+                    <div class="showcase-status-bar"></div>
+                  </div>
+
+                  <div class="countdown-box">
+
+                    <p class="countdown-desc">
+                      Dépêchez-vous ! Offre se termine dans :
+                    </p>
+
+                    <div class="countdown">
+
+                      <div class="countdown-content">
+
+                        <p class="display-number">
+                          360
+                        </p>
+
+                        <p class="display-text">
+                          Jours
+                        </p>
+
+                      </div>
+
+                      <div class="countdown-content">
+                        <p class="display-number">
+                          24
+                        </p>
+                        <p class="display-text">
+                          Heures
+                        </p>
+                      </div>
+
+                      <div class="countdown-content">
+                        <p class="display-number">
+                          59
+                        </p>
+                        <p class="display-text">
+                          Minutes
+                        </p>
+                      </div>
+
+                      <div class="countdown-content">
+                        <p class="display-number">
+                          00
+                        </p>
+                        <p class="display-text">
+                          Secondes
+                        </p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="showcase-container">
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/jewellery-1.jpg" alt="Boucles d'oreilles en or rose et diamants" class="showcase-img">
+                </div>
+
+                <div class="showcase-content">
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="showcase-title">
+                    <a href="#" class="showcase-title">contact nous sur whatsapp </a>
+                  </h3>
+
+                  <p class="showcase-desc">
+                    Découvrez notre collection de vêtements qui allie élégance et confort. Chaque pièce est conçue avec des matériaux de haute qualité, respectant à la fois votre style et votre bien-être. Adoptez un look moderne et sophistiqué, tout en vous sentant à l'aise du matin jusqu'au soir. Mettez en valeur votre personnalité avec des tenues qui vous ressemblent, et laissez-vous séduire par des coupes qui subliment votre silhouette. Avec notre marque, chaque jour est une occasion de briller avec assurance.
+                  </p>
+
+                  <div class="price-box">
+                    <p class="price">
+                      1990,00 $
+                    </p>
+                    <del>2000,00 $</del>
+                  </div>
+
+                  <button class="add-cart-btn">ajouter au panier</button>
+
+                  <div class="showcase-status">
+                    <div class="wrapper">
+                      <p>
+                        déjà vendu : <b>15</b>
+                      </p>
+
+                      <p>
+                        disponible : <b>40</b>
+                      </p>
+                    </div>
+
+                    <div class="showcase-status-bar"></div>
+                  </div>
+
+                  <div class="countdown-box">
+
+                    <p class="countdown-desc">
+                      Dépêchez-vous ! Offre se termine dans :
+                    </p>
+
+                    <div class="countdown">
+                      <div class="countdown-content">
+                        <p class="display-number">
+                          360
+                        </p>
+                        <p class="display-text">
+                          Jours
+                        </p>
+                      </div>
+
+                      <div class="countdown-content">
+                        <p class="display-number">
+                          24
+                        </p>
+                        <p class="display-text">
+                          Heures
+                        </p>
+                      </div>
+
+                      <div class="countdown-content">
+                        <p class="display-number">
+                          59
+                        </p>
+                        <p class="display-text">
+                          Minutes
+                        </p>
+                      </div>
+
+                      <div class="countdown-content">
+                        <p class="display-number">
+                          00
+                        </p>
+                        <p class="display-text">
+                          Secondes
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!--- PRODUCT GRID-->
+
+        <div class="product-main">
+
+          <h2 class="title">Nouveaux Produits</h2>
+
+          <div class="product-grid">
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="./assets/images/products/jacket-3.jpg" alt="Vestes en cuir d'hiver pour hommes" width="300" class="product-img default">
+                <img src="./assets/images/products/jacket-4.jpg" alt="Vestes en cuir d'hiver pour hommes" width="300" class="product-img hover">
+
+                <p class="showcase-badge">
+                  15%
+                </p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-content">
+
+                <a href="#" class="showcase-category">veste</a>
+                <a href="https://wa.me/+242068876767" target="_blank" style="text-decoration:none;">
+                  <button style="background-color:#25D366; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
+                    Contactez-moi sur WhatsApp
+                  </button>
+                </a>
+
+              </h3>
+
+              <a href="#">
+                <h3 class="showcase-title">Vestes en cuir d'hiver pour hommes</h3>
+              </a>
+
+              <div class="showcase-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </div>
+
+              <div class="price-box">
+                <p class="price">
+                  $48.00
+                </p>
+                <del>$75.00</del>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="showcase">
+
+            <div class="showcase-banner">
+              <img src="./assets/images/products/shirt-1.jpg" alt="Chemise en coton teinte pure" class="product-img default" width="300">
+              <img src="./assets/images/products/shirt-2.jpg" alt="Chemise en coton teinte pure" class="product-img hover" width="300">
+
+              <p class="showcase-badge angle black">
+                promotion
+              </p>
+
+              <div class="showcase-actions">
+                <button class="btn-action">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </button>
+
+                <button class="btn-action">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </button>
+
+                <button class="btn-action">
+                  <ion-icon name="repeat-outline"></ion-icon>
+                </button>
+
+                <button class="btn-action">
+                  <ion-icon name="bag-add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+
+            <div class="showcase-content">
+              <a href="#" class="showcase-category">chemise</a>
+              <a href="https://wa.me/+242068876767" target="_blank" style="text-decoration:none;">
+                <button style="background-color:#25D366; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
+                  Contactez-moi sur WhatsApp
+                </button>
+              </a>
+
+            </h3>
+
+            <h3>
+              <a href="#" class="showcase-title">Chemise en coton teinte pure</a>
+            </h3>
+
+            <div class="showcase-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <div class="price-box">
+              <p class="price">
+                $45.00
+              </p>
+              <del>$56.00</del>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="showcase">
+
+          <div class="showcase-banner">
+            <img src="./assets/images/products/jacket-5.jpg" alt="Veste en polaire pour hommes" class="product-img default" width="300">
+            <img src="./assets/images/products/jacket-6.jpg" alt="Veste en polaire pour hommes" class="product-img hover" width="300">
+
+            <div class="showcase-actions">
+              <button class="btn-action">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <a href="#" class="showcase-category">veste</a>
+            <a href="https://wa.me/+242068876767" target="_blank" style="text-decoration:none;">
+              <button style="background-color:#25D366; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
+                Contactez-moi sur WhatsApp
+              </button>
+            </a>
+          </h3>
+
+          <h3>
+            <a href="#" class="showcase-title">Veste en polaire pour hommes</a>
+          </h3>
+
+          <div class="showcase-rating">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+          </div>
+
+          <div class="price-box">
+            <p class="price">
+              $58.00
+            </p>
+            <del>$65.00</del>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="showcase">
+
+        <div class="showcase-banner">
+          <img src="./assets/images/products/jacket-1.jpg" alt="Vestes en cuir d'hiver pour hommes" class="product-img default" width="300">
+          <img src="./assets/images/products/jacket-2.jpg" alt="Vestes en cuir d'hiver pour hommes" class="product-img hover" width="300">
+
+          <div class="showcase-actions">
+            <button class="btn-action">
+              <ion-icon name="heart-outline"></ion-icon>
+            </button>
+
+            <button class="btn-action">
+              <ion-icon name="eye-outline"></ion-icon>
+            </button>
+
+            <button class="btn-action">
+              <ion-icon name="repeat-outline"></ion-icon>
+            </button>
+
+            <button class="btn-action">
+              <ion-icon name="bag-add-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <div class="showcase-content">
+          <a href="#" class="showcase-category">veste</a>
+
+          <h3>
+            <a href="https://wa.me/+242068876767" target="_blank" style="text-decoration:none;">
+              <button style="background-color:#25D366; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
+                Contactez-moi sur WhatsApp
+              </button>
+            </a>
+
+          </h3>
+          <a href="#" class="showcase-title">Vestes en cuir d'hiver pour hommes</a>
+        </h3>
+
+        <div class="showcase-rating">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+        </div>
+
+        <div class="price-box">
+          <p class="price">
+            32,00 $
+          </p>
+          <del>45,00 $</del>
+        </div>
+      </div>
+
+      <div class="showcase">
+        <div class="showcase-banner">
+          <img src="./assets/images/product-1.jpg" alt="Chaussures de trekking et de course - noires" class="product-img default"
+          width="300">
+          <img src="./assets/images/product-4.jpg" alt="Chaussures de trekking et de course - noires" class="product-img hover"
+          width="300">
+
+          <p class="showcase-badge angle black">
+            solde
+          </p>
+
+          <div class="showcase-actions">
+            <button class="btn-action">
+              <ion-icon name="heart-outline"></ion-icon>
+            </button>
+
+            <button class="btn-action">
+              <ion-icon name="eye-outline"></ion-icon>
+            </button>
+
+            <button class="btn-action">
+              <ion-icon name="repeat-outline"></ion-icon>
+            </button>
+
+            <button class="btn-action">
+              <ion-icon name="bag-add-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <div class="showcase-content">
+          <a href="#" class="showcase-category">T-shirt</a>
+          <a href="https://wa.me/+242068876767" target="_blank" style="text-decoration:none;">
+            <button style="background-color:#25D366; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
+              Contactez-moi sur WhatsApp
+            </button>
+          </a>
+          <a href="#" class="showcase-title">T-shirt en molleton français Better Basics</a>
+        </h3>
+
+        <div class="showcase-rating">
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+          <ion-icon name="star-outline"></ion-icon>
+        </div>
+
+        <div class="price-box">
+          <p class="price">
+            18000fcfa
+          </p>
+          <del>20000fcfa</del>
+        </div>
+      </div>
+    </div>
+
+    <div class="showcase">
+      <div class="showcase-banner">
+        <img src="./assets/images/product-1.jpg" alt="Chaussures habillées en cuir pour hommes" class="product-img default"
+        width="300">
+        <img src="./assets/images/product-8.jpg" alt="Chaussures habillées en cuir pour hommes" class="product-img hover"
+        width="300">
+
+        <div class="showcase-actions">
+          <button class="btn-action">
+            <ion-icon name="heart-outline"></ion-icon>
+          </button>
+
+          <button class="btn-action">
+            <ion-icon name="eye-outline"></ion-icon>
+          </button>
+
+          <button class="btn-action">
+            <ion-icon name="repeat-outline"></ion-icon>
+          </button>
+
+          <button class="btn-action">
+            <ion-icon name="bag-add-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+
+      <div class="showcase-content">
+        <a href="#" class="showcase-category">T-shirt</a>
+
+        <a href="https://wa.me/+242068876767" target="_blank" style="text-decoration:none;">
+          <button style="background-color:#25D366; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
+            Contactez-moi sur WhatsApp
+          </button>
+        </a>
+        <a href="#" class="showcase-title">T-shirt en molleton français Better Basics</a>
+      </h3>
+
+      <div class="showcase-rating">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+      </div>
+
+      <div class="price-box">
+        <p class="price">
+          8000fcfa
+        </p>
+        <del>13000</del>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="showcase">
+
+    <div class="showcase-banner">
+      <img src="./assets/images/product-5.jpg" alt="Shorts en molleton français Better Basics"
+      class="product-img default" width="300">
+      <img src="./assets/images/product-7.jpg" alt="Shorts en molleton français Better Basics"
+      class="product-img hover" width="300">
+
+      <p class="showcase-badge angle black">
+        solde
+      </p>
+
+      <div class="showcase-actions">
+        <button class="btn-action">
+          <ion-icon name="heart-outline"></ion-icon>
+        </button>
+
+        <button class="btn-action">
+          <ion-icon name="eye-outline"></ion-icon>
+        </button>
+
+        <button class="btn-action">
+          <ion-icon name="repeat-outline"></ion-icon>
+        </button>
+
+        <button class="btn-action">
+          <ion-icon name="bag-add-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+
+    <div class="showcase-content">
+      <a href="#" class="showcase-category">T-shirt </a>
+
+      <h3>
+        <a href="https://wa.me/+242068876767" target="_blank" style="text-decoration:none;">
+          <button style="background-color:#25D366; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
+            Contactez-moi sur WhatsApp
+          </button>
+        </a>
+        <a href="#" class="showcase-title">T-shirt en molleton français Better Basics</a>
+      </h3>
+
+      <div class="showcase-rating">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+      </div>
+
+      <div class="price-box">
+        <p class="price">
+          13000fcfa
+        </p>
+        <del>18000fcfa</del>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<!--
+- CTA
+-->
+<div class="cta-container">
+
+<img src="./assets/images/cta-banner.jpg" alt="collection été" class="cta-banner">
+
+<a href="#" class="cta-content">
+
+<p class="discount">
+25% de réduction
+</p>
+
+<h2 class="cta-title">Collection d'été</h2>
+
+<p class="cta-text">
+À partir de 8000fcfa
+</p>
+
+<button class="cta-btn">Achetez maintenant</button>
+
+</a>
+
+</div>
+
+
+
+<!--- SERVICE-->
+<div class="service">
+
+<h2 class="title">Nos Services</h2>
+
+<div class="service-container">
+
+<a href="#" class="service-item">
+
+<div class="service-icon">
+<ion-icon name="boat-outline"></ion-icon>
+</div>
+
+<div class="service-content">
+
+<h3 class="service-title">Livraison Mondiale</h3>
+<p class="service-desc">
+Pour les commandes de plus de 100 $
+</p>
+
+</div>
+
+</a>
+
+<a href="#" class="service-item">
+
+<div class="service-icon">
+<ion-icon name="rocket-outline"></ion-icon>
+</div>
+
+<div class="service-content">
+
+<h3 class="service-title">Livraison le lendemain</h3>
+<p class="service-desc">
+Commandes À brazzaville
+</p>
+
+</div>
+
+</a>
+
+<a href="#" class="service-item">
+
+<div class="service-icon">
+<ion-icon name="call-outline"></ion-icon>
+</div>
+
+<div class="service-content">
+
+<h3 class="service-title">Meilleur support en ligne</h3>
+<p class="service-desc">
+Horaires : 8h - 23h
+</p>
+
+</div>
+
+</a>
+
+<a href="#" class="service-item">
+
+<div class="service-icon">
+<ion-icon name="arrow-undo-outline"></ion-icon>
+</div>
+
+<div class="service-content">
+
+<h3 class="service-title">Politique de retour</h3>
+<p class="service-desc">
+Retour facile et gratuit
+</p>
+
+</div>
+
+</a>
+
+<a href="#" class="service-item">
+
+<div class="service-icon">
+<ion-icon name="ticket-outline"></ion-icon>
+</div>
+
+</a>
+</div>
+</div>
+</div>
+
+</main>
+
+
+
+
+
+<!--- FOOTER-->
+
+<footer>
+
+<div class="footer-category">
+
+<div class="container">
+
+<h2 class="footer-category-title">Répertoire de marques</h2>
+
+<div class="footer-category-box">
+
+<h3 class="category-box-title">Mode :</h3>
+
+<a href="#" class="footer-category-link">T-shirt</a>
+<a href="#" class="footer-category-link">Chemises</a>
+<a href="#" class="footer-category-link">Shorts & jeans</a>
+<a href="#" class="footer-category-link">Vestes</a>
+<a href="#" class="footer-category-link">Robes & tuniques</a>
+<a href="#" class="footer-category-link">Sous-vêtements</a>
+<a href="#" class="footer-category-link">Bonnetterie</a>
+
+</div>
+
+<ul class="footer-nav-list">
+
+<li class="footer-nav-item">
+<h2 class="nav-title">Produits</h2>
+</li>
+
+<li class="footer-nav-item">
+<a href="#" class="footer-nav-link">Baisse des prix</a>
+</li>
+
+<li class="footer-nav-item">
+<a href="#" class="footer-nav-link">Nouveaux produits</a>
+</li>
+
+<li class="footer-nav-item">
+<a href="#" class="footer-nav-link">Meilleures ventes</a>
+</li>
+
+<li class="footer-nav-item">
+<a href="#" class="footer-nav-link">Nous contacter</a>
+</li>
+
+<li class="footer-nav-item">
+<a href="#" class="footer-nav-link">Plan du site</a>
+</li>
+
+</ul>
+
+<ul class="footer-nav-list">
+
+<li class="footer-nav-item">
+<h2 class="nav-title">Notre entreprise</h2>
+</li>
+
+<li class="footer-nav-item">
+<a href="#" class="footer-nav-link">Livraison</a>
+</li>
+
+<li class="footer-nav-item">
+<a href="#" class="footer-nav-link">Mentions légales</a>
+</li>
+
+<li class="footer-nav-item">
+<a href="#" class="footer-nav-link">Conditions générales</a>
+</li>
+
+<li class="footer-nav-item">
+<a href="#" class="footer-nav-link">À propos de nous</a>
+</li>
+
+<li class="footer-nav-item">
+<a href="#" class="footer-nav-link">Paiement sécurisé</a>
+</li>
+
+</ul>
+
+<ul class="footer-nav-list">
+
+<li class="footer-nav-item">
+<h2 class="nav-title">Services</h2>
+</li>
+
+<li class="footer-nav-item">
+<a href="#" class="footer-nav-link">Baisse des prix</a>
+</li>
+
+<li class="footer-nav-item">
+<a href="#" class="footer-nav-link">Nouveaux produits</a>
+</li>
+
+<li class="footer-nav-item">
+<a href="#" class="footer-nav-link">Meilleures ventes</a>
+</li>
+
+<li class="footer-nav-item">
+<a href="#" class="footer-nav-link">Nous contacter</a>
+</li>
+
+<li class="footer-nav-item">
+<a href="#" class="footer-nav-link">Plan du site</a>
+</li>
+
+</ul>
+
+<ul class="footer-nav-list">
+
+<li class="footer-nav-item">
+<h2 class="nav-title">Contact</h2>
+</li>
+
+<li class="footer-nav-item flex">
+<div class="icon-box">
+<ion-icon name="location-outline"></ion-icon>
+</div>
+
+<address class="content">
+Marcher poto-poto
+</address>
+</li>
+
+<li class="footer-nav-item flex">
+<div class="icon-box">
+<ion-icon name="call-outline"></ion-icon>
+</div>
+
+<a href="tel:+607936-8058" class="footer-nav-link">+242 06 887 6767</a>
+</li>
+
+<li class="footer-nav-item flex">
+<div class="icon-box">
+<ion-icon name="mail-outline"></ion-icon>
+</div>
+
+<a href="mailto:example@gmail.com" class="footer-nav-link">sitakevin97@gmail.com</a>
+</li>
+
+</ul>
+
+<ul class="footer-nav-list">
+
+<li class="footer-nav-item">
+<h2 class="nav-title">Suivez-nous</h2>
+</li>
+
+<li>
+<ul class="social-link">
+
+<li class="footer-nav-item">
+<a href="#" class="footer-nav-link">
+<ion-icon name="logo-facebook"></ion-icon>
+</a>
+</li>
+
+<li class="footer-nav-item">
+<a href="#" class="footer-nav-link">
+<ion-icon name="logo-twitter"></ion-icon>
+</a>
+</li>
+
+<li class="footer-nav-item">
+<a href="#" class="footer-nav-link">
+<ion-icon name="logo-linkedin"></ion-icon>
+</a>
+</li>
+
+<li class="footer-nav-item">
+<a href="#" class="footer-nav-link">
+<ion-icon name="logo-instagram"></ion-icon>
+</a>
+</li>
+
+</ul>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<div class="container">
+
+<img src="./assets/images/payment.png" alt="moyens de paiement" class="payment-img">
+
+<p class="copyright">
+Copyright &copy; <a href="#">barry-bello</a> tous droits réservés.
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+
+
+
+
+
+<!--- custom js link-->
+<script src="./assets/js/script.js"></script>
+
+<!--- ionicon link-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
